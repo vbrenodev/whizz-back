@@ -15,7 +15,7 @@ class MessageSchedulesControllerTest < ActionDispatch::IntegrationTest
   test 'should create message_schedule' do
     assert_difference('MessageSchedule.count') do
       post message_schedules_url,
-           params: { message_schedule: { message: @message_schedule.message, messageId: @message_schedule.messageId, scheduleDate: @message_schedule.scheduleDate, whatsappNumber: @message_schedule.whatsappNumber } }, as: :json
+           params: { message_schedule: { message: @message_schedule.message, message_id: @message_schedule.message_id, schedule_date: @message_schedule.schedule_date, whatsapp_number: @message_schedule.whatsapp_number } }, as: :json
     end
 
     assert_response :created
@@ -28,7 +28,7 @@ class MessageSchedulesControllerTest < ActionDispatch::IntegrationTest
 
   test 'should update message_schedule' do
     patch message_schedule_url(@message_schedule),
-          params: { message_schedule: { message: @message_schedule.message, messageId: @message_schedule.messageId, scheduleDate: @message_schedule.scheduleDate, whatsappNumber: @message_schedule.whatsappNumber } }, as: :json
+          params: { message_schedule: { message: @message_schedule.message, message_id: @message_schedule.message_id, schedule_date: @message_schedule.schedule_date, whatsapp_number: @message_schedule.whatsapp_number } }, as: :json
     assert_response :success
   end
 

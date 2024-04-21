@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  messageId: MyString
+  message_id: MyString
   message: MyString
-  scheduleDate: 2024-04-21 07:02:45
-  whatsappNumber: 1
+  schedule_date: 2024-04-21 07:02:45
+  whatsapp_number: 1
 
 two:
-  messageId: MyString
+  message_id: MyString
   message: MyString
-  scheduleDate: 2024-04-21 07:02:45
-  whatsappNumber: 1
+  schedule_date: 2024-04-21 07:02:45
+  whatsapp_number: 1
