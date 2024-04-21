@@ -1,6 +1,8 @@
-class CreateScheduledMessage < ActiveRecord::Migration[7.1]
+# frozen_string_literal: true
+
+class CreateMessageSchedules < ActiveRecord::Migration[7.1]
   def change
-    create_table :scheduled_messages do |t|
+    create_table :message_schedules do |t|
       t.string :messageId
       t.string :message
       t.datetime :scheduleDate
