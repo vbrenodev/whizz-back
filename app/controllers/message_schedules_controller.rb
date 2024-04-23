@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class MessageSchedulesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_message_schedule, only: %i[show update destroy]
 
   def index
